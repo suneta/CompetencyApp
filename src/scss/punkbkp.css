@@ -1,0 +1,24 @@
+
+.container{display:flex;flex-wrap:wrap;}
+.card{margin:1rem;border:1px solid gray;}
+@media screen and (min-width:600px){
+	.card{flex:1 1 calc(50% - 2rem);}
+}
+@media screen and (min-width:900px){
+	.card{flex:1 1 calc(33% - 2rem);}
+}
+/** This class will hide all the body be default **/
+#accordion .body{display :none;padding :10px;}
+/** This class will show the body if it has a parent with active       class**/
+#accordion .active .body{display :block;}
+#accordion .panel{border :solid 1px #D6D6D6;margin:5px;padding :5px;border-radius :2px;}
+
+/*
+.slideshow{margin:0 auto 30px; width:210px; overflow:hidden; border:solid 1px #cecece; border-radius:5px;}
+.slideshow img{width:200px; height:200px; padding:5px; display: none; border-radius: 10px;}
+*/
+.cycle-slideshow img{width:100%;height:auto;}
+.cycle-slideshow  div{float:none;}
+
+/*If using Jquery Enhanced*/
+.cycle-carousel-wrap{top:0 !important;}
